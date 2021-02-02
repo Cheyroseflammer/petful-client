@@ -1,70 +1,117 @@
-# Petful Client
+# Petful/Fifo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Adoption site with a first come first serve basis using javascript DSA's.
 
-## Available Scripts
+## Application Link
 
-In the project directory, you can run:
+---
 
-### `npm start`
+Live Front-End: https://petful-client.cheyroseflammer.vercel.app/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Server Back-End: https://peaceful-plateau-71462.herokuapp.com/
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### User Stories
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### User Story #1
 
-### `npm run build`
+As a pet lover, I want to visit the FIFO pet adoption site
+so that I can get more information about the adoption process.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Acceptance criteria
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+When I go to the FIFO adoption agency site
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- I see a description of the adoption process.
+- I see a meaningful picture related to the description.
+- I see a button for starting the adoption process.
 
-### `npm run eject`
+#### User Story #2
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As a user interested in adopting pets, I want to get more information
+on each pet so that I can make an informed decision about who to adopt.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Acceptance criteria
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+When I visit the adoption page, I can see:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- An image of the pet;
+- A physical description of the pet;
+- The pet's name, gender, age, and breed.
+- A story of the pet's journey to the shelter
 
-## Learn More
+#### User Story #3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+As a user interested in adopting pets,
+I want to see the pets that I can adopt.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Acceptance criteria
 
-### Code Splitting
+When I visit the adoption page, I can only see the
+pet that is next in line to be adopted.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### User Story #4
 
-### Analyzing the Bundle Size
+As a user interested in adopting pets, I want to get in line to adopt.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Acceptance criteria
 
-### Making a Progressive Web App
+When I visit the adoption page:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- I can see a list of other people currently in line.
+- I can submit my name and be added to the end of the line.
+- When I am not at the beginning of the line, I cannot see an option to adopt a pet.
+- For demo purposes: Once I join the line, I can see other pets being adopted until I am at the front of the line.
+  - Every five seconds, the user at the front of the line should be removed from the line and one of the pets up for adoption should disappear.
+  - When I am at the front of the line, a new user should be added to the line behind me every five seconds until there are a total of five users in line.
 
-### Advanced Configuration
+#### User Story #5
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+As a user interested in adopting pets, I want to adopt a pet.
 
-### Deployment
+Acceptance criteria
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+When I am at the front of the line:
 
-### `npm run build` fails to minify
+- I can see an option to adopt a pet.
+- When I choose to adopt a pet:
+  - I see a confirmation that I have adopted the pet.
+  - I see my name removed from the line.
+  - I see the pet I adopted is removed from view and replaced with another pet.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Technology Used
+
+---
+
+Front-End: HTML5, CSS3, JavaScript, & React
+
+Back-End: : Node.js, Express.js, Mocha, Chai, RESTful API, Postgres
+
+## Running the Application Locally
+
+Using your command line to navigate to the the projects folder, run the following in your terminal (intergrated or not)
+
+##### Local React scripts
+
+- To install the react project: npm install
+- To run react (on port 3000): npm start
+- To run tests: npm run test
+
+## Screen Shots
+
+### Home Page
+
+![home-page](screenshots/home.png)
+
+### Adopt Cat
+
+![adopt-cat](screenshots/catAdopt.png)
+
+### Adopt Dog
+
+![adopt-dog](screenshots/dogAdopt.png)
+
+### Congrats on your new pet
+
+![new-pet-congrats](screenshots/congrats.png)
