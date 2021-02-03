@@ -102,16 +102,12 @@ Using your command line to navigate to the the projects folder, run the followin
 
 ### Home Page
 
-![home-page](screenshots/home.png)
+![home-page](src/images/home.png)
 
-### Adopt Cat
+### In Line
 
-![adopt-cat](screenshots/catAdopt.png)
-
-### Adopt Dog
-
-![adopt-dog](screenshots/dogAdopt.png)
+![in-line](src/images/inLine.png)
 
 ### Congrats on your new pet
 
-![new-pet-congrats](screenshots/congrats.png)
+![new-pet-congrats](src/images/adopted.png)
