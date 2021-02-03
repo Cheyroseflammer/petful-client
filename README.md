@@ -6,9 +6,9 @@ Adoption site with a first come first serve basis using javascript DSA's.
 
 ---
 
-Live Front-End: https://petful-client.cheyroseflammer.vercel.app/
+Live Front-End: https://petful-seven-orcin.vercel.app/
 
-Server Back-End: https://peaceful-plateau-71462.herokuapp.com/
+Server Back-End: https://floating-reaches-91544.herokuapp.com/
 
 ### User Stories
 
